@@ -1,0 +1,70 @@
+import { learn_by_myselfs, proficients, socails } from "../data"
+
+const Profile = () => {
+  return (
+    <section className='relative xl:px-[200px]'>
+      <img
+        src="/image/main.png"
+        className='w-[635px] h-[622px] absolute xl:right-28 right-0 -top-[200px] opacity-50 xl:opacity-100'
+      // data-aos='fade-left'
+      // data-aos-delay='100'
+      />
+      {/* Card */}
+      <div
+        className='card max-w-[800px] flex flex-col gap-y-5'
+        data-aos='fade-right'
+        data-aos-delay='400'
+      >
+        {/* header */}
+        <div className='flex items-center gap-x-5'>
+          <img
+            src="/image/nasfong.jpg"
+            className='w-[100px] h-[100px] rounded-full border-white border'
+          />
+          <div>
+            <div>Create by: <span className='font-bold'>NasFong</span> </div>
+            <div>Phone number: <span className='font-bold'>093292931</span> </div>
+            <div>Email: <span className='font-bold'>fongren007@gmail.com</span> </div>
+          </div>
+        </div>
+        {/* body */}
+        <div className='flex'>
+          <div className="min-w-[150px]">Proficient:</div>
+          <div className='flex flex-wrap justify-center gap-x-3'>
+            {proficients.map((pro, idx) => (
+              <div className={`card-item`} style={{ color: pro.color }} key={idx}>
+                {pro.name}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='flex'>
+          <div className="min-w-[150px]">Learn by myself:</div>
+          <div className='flex flex-wrap justify-center gap-x-3'>
+            {learn_by_myselfs.map((learn, idx) => (
+              <div className={`card-item`} style={{ color: learn.color }} key={idx}>
+                {learn.name}
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* footer */}
+        <div className="flex flex-row gap-x-10 lg:pt-10">
+          {socails.map((social, idx) => (
+            <div key={idx} className="flex flex-row items-center gap-x-2">
+              {/* <img src={social.icon} className='w-[20px] h-[20px] svg' /> */}
+              <div
+                className={`icon`}
+                dangerouslySetInnerHTML={{ __html: social.icon }}
+              />
+              <div>{social.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </section>
+  )
+}
+
+export default Profile

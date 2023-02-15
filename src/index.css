@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --accent-color: orangered;
+  --background-color: white;
+  --text-color: black;
+  --button-text-color: var(--background-color);
+}
+
+body {
+  /* --transition-delay: 1s; */
+  transition: var(--transition-delay);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+body.dark {
+  --accent-color: #D0D066;
+  --background-color: #000000;
+  --text-color: white;
+}
+
+.card {
+  background: linear-gradient(163deg, rgba(255, 255, 255, 0.4) 0%, rgba(250, 250, 250, 0.1) 100%);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 0;
+  border-right: 0;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
+  padding: 20px;
+}
+
+.card-item {
+  background: linear-gradient(163deg, rgba(255, 255, 255, 0.4) 0%, rgba(250, 250, 250, 0.1) 100%);
+  /* backdrop-filter: blur(0.1px); */
+  border-radius: 20px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
+  padding: 1px 5px;
+  display: inline-block;
+}
+
+.grid-auto {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.icon svg path {
+  fill: var(--text-color);
+}
