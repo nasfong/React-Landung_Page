@@ -1,6 +1,15 @@
 import { learn_by_myselfs, proficients, socails } from "../data"
 
+const time = new Intl.RelativeTimeFormat('en', {
+  numeric: 'auto',
+})
+
+const create_date: Date = new Date('2023-02-13')
+const tody_date: Date = new Date()
+tody_date.setDate(tody_date.getDate() - create_date.getDate())
+const days = tody_date.getDate()
 const Profile = () => {
+
   return (
     <section className='relative xl:px-[200px]'>
       <img
@@ -25,6 +34,7 @@ const Profile = () => {
             <div>Create by: <span className='font-bold'>NasFong</span> </div>
             <div>Phone number: <span className='font-bold'>093292931</span> </div>
             <div>Email: <span className='font-bold'>fongren007@gmail.com</span> </div>
+            <div>Created Date: <span className=''>13/02/2023 ({days}days ago)</span> </div>
           </div>
         </div>
         {/* body */}

@@ -44,7 +44,7 @@ const ImageScroll = () => {
       >
         {images.map((item, idx) => (
           <SwiperSlide key={idx} className='cursor-pointer'>
-            <img src={item.image} alt={item.name} />
+            <img src={item.image} alt={item.name} className='image' />
           </SwiperSlide>
         ))}
       </Swiper>

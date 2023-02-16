@@ -10,7 +10,9 @@ const Discord = () => {
         <div className='text-[100px]'>Github</div>
       </div>
       <div>
-        <img src="/image/figma.png" className="w-[750px] h-[400px] rounded-xl" />
+        <a href="https://github.com/nasfong">
+          <img src="/image/github.png" className="w-[750px] h-[400px] rounded-xl" />
+        </a>
       </div>
     </section>
   )

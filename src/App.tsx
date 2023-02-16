@@ -22,7 +22,7 @@ function App() {
   })
 
   return (
-    <div className='container mx-auto flex flex-col gap-y-[50px] lg:gap-y-[250px] px-3 '>
+    <div className='container mx-auto flex flex-col gap-y-[50px] lg:gap-y-[250px] px-6'>
       {/* <button onClick={handleMode}>Mode</button> */}
       {/* background */}
       <img src="/svg/blob.svg" alt="" className="absolute top-0 right-0 pointer-events-none" />

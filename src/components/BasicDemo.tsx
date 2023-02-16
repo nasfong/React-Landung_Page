@@ -24,7 +24,7 @@ const BasicDemo = () => {
         data-aos-offset='800'
       >
         <div className='font-bold text-[3rem]'>
-          HRMS BASIC DEMO
+          HRMS BASIC <span className='text-[#f1416c] border-b-2 border-yellow-300 rounded-sm'>DEMO</span>
         </div>
         <div>
           <div>Visit: https://vite-create-tsx.vercel.app/</div>
@@ -46,13 +46,17 @@ const BasicDemo = () => {
           </a>
         </div>
       </div>
-
-      <img
-        src='/image/siginDemo.png'
-        className='h-[300px] xl:h-[400px] lg:w-[800] rounded-xl'
-        data-aos='fade-left'
-        data-aos-offset='800'
-      />
+      <a
+        href="https://vite-create-tsx.vercel.app/"
+        target="_blank"
+      >
+        <img
+          src='/image/siginDemo.png'
+          className='h-[300px] xl:h-[400px] lg:w-[800] rounded-xl'
+          data-aos='fade-left'
+          data-aos-offset='800'
+        />
+      </a>
 
     </section >
   )
