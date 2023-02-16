@@ -20,7 +20,7 @@ const BasicDemo = () => {
     <section className='flex flex-col lg:flex-row justify-around items-center gap-y-10'>
       <div
         className='flex flex-col xl:gap-y-16'
-        data-aos='fade-right'
+        data-aos='flip-right'
         data-aos-offset='800'
       >
         <div className='font-bold text-[3rem]'>
@@ -49,11 +49,12 @@ const BasicDemo = () => {
       <a
         href="https://vite-create-tsx.vercel.app/"
         target="_blank"
+        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
       >
         <img
           src='/image/siginDemo.png'
           className='h-[300px] xl:h-[400px] lg:w-[800] rounded-xl'
-          data-aos='fade-left'
+          data-aos='flip-left'
           data-aos-offset='800'
         />
       </a>

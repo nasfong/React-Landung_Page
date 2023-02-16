@@ -7,7 +7,7 @@ import Figma from './components/Figma'
 import ImageScroll from './components/ImageScroll'
 import Logo from './components/Logo'
 import Profile from './components/Profile'
-import Discord from './components/Discord'
+import Github from './components/Github'
 
 
 
@@ -31,7 +31,7 @@ function App() {
       <ImageScroll />
       <BasicDemo />
       <Figma />
-      <Discord />
+      <Github />
       <div className='h-[100px]' />
     </div>
   )

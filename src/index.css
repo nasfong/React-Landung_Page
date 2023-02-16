@@ -46,17 +46,7 @@ body.dark {
   display: inline-block;
 }
 
-.grid-auto {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
-}
-.icon {
-  width: 20px;
-  height: 20px;
-}
-.icon svg path {
+
+svg path {
   fill: var(--text-color);
 }
-
-
