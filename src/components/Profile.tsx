@@ -14,7 +14,7 @@ const Profile = () => {
     <section className='relative xl:px-[200px]'>
       <img
         src="/image/main.png"
-        className='w-[635px] h-[622px] absolute xl:right-28 right-0 -top-[200px] opacity-50 xl:opacity-100'
+        className='w-[635px] h-[622px] absolute xl:right-28 right-0 -top-[200px] opacity-50 xl:opacity-100 z-0'
       />
       {/* Card */}
       <div

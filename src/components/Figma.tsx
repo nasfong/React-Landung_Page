@@ -1,9 +1,6 @@
 const Figma = () => {
   return (
-    <section
-      className='flex flex-col-reverse lg:flex-row justify-around'
-
-    >
+    <section className='flex flex-col-reverse lg:flex-row justify-around'>
       <a
         href="https://www.figma.com/file/q1s1ytUjnpjRX52xeN1U9V/Untitled?node-id=0%3A1&t=AfwJR3JZaOcyMvKD-0"
         target="_blank"
@@ -11,7 +8,7 @@ const Figma = () => {
       >
         <img
           src="/image/figma.png"
-          className="h-[300px] xl:h-[400px] lg:w-[800] rounded-xl"
+          className="h-[300px] xl:h-[400px] w-full rounded-xl"
           data-aos='zoom-out-down'
           data-aos-offset='600'
         />

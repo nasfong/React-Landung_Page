@@ -3,7 +3,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <section
-      className='text-[3rem] font-bold text-center my-16'
+      className='text-[3rem] font-bold text-center relative z-10'
       data-aos='fade-down'
       data-aos-delay='400'
     >

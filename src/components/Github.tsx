@@ -1,9 +1,6 @@
 const Github = () => {
   return (
-    <section
-      className='flex-row lg:flex justify-around'
-
-    >
+    <section className='flex-row lg:flex lg:justify-around justify-center'>
       <div
         className='flex flex-row justify-center items-center'
         data-aos="fade-up"
@@ -21,7 +18,7 @@ const Github = () => {
       >
         <img
           src="/image/github.png"
-          className="w-[750px] h-[400px] rounded-xl"
+          className="h-[300px] xl:h-[400px] w-full rounded-xl"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset='600'
