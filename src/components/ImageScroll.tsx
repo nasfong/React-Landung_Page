@@ -12,7 +12,6 @@ const ImageScroll = () => {
     <section
       className="card"
       data-aos='fade-up'
-      data-aos-offset='0'
     >
       <img src="/image/boy.png" alt="" className="z-0 absolute -top-[150px] lg:-top-[300px] -left-[100px] opacity-50 pointer-events-none" />
 

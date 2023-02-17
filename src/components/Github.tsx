@@ -5,7 +5,7 @@ const Github = () => {
         className='flex flex-row justify-center items-center'
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        data-aos-offset='600'
+        // data-aos-offset='600'
       >
         <img src="/svg/github.svg" className="w-[80px] h-[80px]" />
         <div className='text-[100px]'>Github</div>
@@ -21,7 +21,7 @@ const Github = () => {
           className="h-[300px] xl:h-[400px] w-full rounded-xl"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-offset='600'
+          // data-aos-offset='500'
         />
       </a>
     </section>

@@ -21,7 +21,7 @@ const BasicDemo = () => {
       <div
         className='flex flex-col xl:gap-y-16'
         data-aos='flip-right'
-        data-aos-offset='800'
+        // data-aos-offset='800'
       >
         <div className='font-bold text-[3rem]'>
           HRMS BASIC <span className='text-[#f1416c] border-b-2 border-yellow-300 rounded-sm'>DEMO</span>
@@ -55,7 +55,7 @@ const BasicDemo = () => {
           src='/image/siginDemo.png'
           className='h-[300px] xl:h-[400px] lg:w-[800] rounded-xl'
           data-aos='flip-left'
-          data-aos-offset='800'
+          // data-aos-offset='800'
         />
       </a>
 

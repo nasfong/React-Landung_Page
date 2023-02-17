@@ -23,7 +23,7 @@ const Header = () => {
   }
   return (
     <section>
-      <div className='mb-[150px] mt-10 flex justify-between'>
+      <div className='mb-[0px] lg:mb-[50px] mt-10 flex justify-between'>
         <div>
           LOGO...
         </div>
