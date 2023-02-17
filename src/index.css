@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 
-:root {
+/* :root {
   --accent-color: orangered;
   --background-color: white;
   --background-color-2: #d4d1ff;
   --background-color-3: #d6d6ff;
   --text-color: black;
   --button-text-color: var(--background-color);
-}
+} */
 
 body {
-  /* --transition-delay: 1s; */
+  --transition-delay: 1s;
   transition: var(--transition-delay);
-  /* background-color: var(--background-color); */
   background-image: linear-gradient(to right, var(--background-color), var(--background-color-2), var(--background-color-3));
   color: var(--text-color);
   font-family: 'Roboto Condensed', sans-serif;
