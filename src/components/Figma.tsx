@@ -9,13 +9,13 @@ const Figma = () => {
         <img
           src="/image/figma.png"
           className="h-[300px] xl:h-[400px] w-full rounded-xl"
-          data-aos='zoom-out-down'
+          data-aos='flip-up'
           // data-aos-offset='600'
         />
       </a>
       <div
         className='flex flex-row justify-center items-center'
-        data-aos='zoom-out-down'
+        data-aos='flip-up'
         // data-aos-offset='600'
       >
         <img src="/svg/figma.svg" className="w-[80px] h-[80px]" />

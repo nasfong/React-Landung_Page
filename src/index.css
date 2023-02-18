@@ -60,7 +60,7 @@ body.light {
 }
 
 
-svg path {
+.icon svg path {
   fill: var(--text-color);
 }
 
