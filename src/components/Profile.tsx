@@ -29,7 +29,7 @@ const Profile = () => {
             className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full border-white border object-cover'
           />
           <div className="">
-            <div>Create by: <span className='font-bold'>NasFong</span> </div>
+            <div>Created by: <span className='font-bold'>NasFong</span> </div>
             <div>Phone number: <span className='font-bold'>093292931</span> </div>
             <div className="">Email: <span className='font-bold'>fongren007@gmail.com</span> </div>
             <div>Created date: <span className=''>13/02/2023 (<span className='text-[#50CD89] font-semibold'>{days}days ago</span>)</span> </div>

@@ -32,7 +32,7 @@ const ImageScroll = () => {
         modules={[Pagination]}
       >
         {images.map((item, idx) => (
-          <SwiperSlide key={idx} className='cursor-pointer'>
+          <SwiperSlide key={idx} className='cursor-grab'>
             <img src={item.image} className='image pb-8' />
           </SwiperSlide>
         ))}
