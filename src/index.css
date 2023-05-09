@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root {
+  --accent-color: orangered;
+  --background-color: white;
+  --background-color-2: #d4d1ff;
+  --background-color-3: #d6d6ff;
+  --text-color: black;
+  --button-text-color: var(--background-color);
+} */
+
+body {
+  --transition-delay: 1s;
+  transition: var(--transition-delay);
+  background-image: linear-gradient(to right, var(--background-color), var(--background-color-2), var(--background-color-3));
+  color: var(--text-color);
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+body.dark {
+  --accent-color: #D0D066;
+  --text-color: white;
+  --background-color: #000000;
+  --background-color-2: #302b63;
+  --background-color-3: #24243e;
+}
+
+body.light {
+  --accent-color: orangered;
+  --background-color: white;
+  --background-color-2: #d4d1ff;
+  --background-color-3: #d6d6ff;
+  --text-color: black;
+  --button-text-color: var(--background-color);
+}
+
+.card {
+  background: linear-gradient(163deg, rgba(255, 255, 255, 0.4) 0%, rgba(250, 250, 250, 0.1) 100%);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 0;
+  border-right: 0;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
+  padding: 20px;
+}
+
+.card-item {
+  background: linear-gradient(163deg, rgba(255, 255, 255, 0.4) 0%, rgba(250, 250, 250, 0.1) 100%);
+  /* backdrop-filter: blur(0.1px); */
+  border-radius: 20px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
+  padding: 1px 5px;
+  display: inline-block;
+}
+
+
+.icon svg path {
+  fill: var(--text-color);
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
