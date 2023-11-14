@@ -1,28 +1,70 @@
+type skill = {
+  name: string
+  color: string
+  bg: string
+}
+
 export const proficients = [
   {
     name: 'ReactJs',
-    color: '#37D6F9'
+    color: '#37D6F9',
+    bg: ""
   },
   {
     name: 'Javascript',
-    color: '#F5F937'
+    color: '#000',
+    bg: "#F5F937"
   },
   {
     name: 'TypeScript',
-    color: '#316BDC'
+    color: 'white',
+    bg: '#316BDC'
+  },
+  {
+    name: 'Vue - Ionic',
+    color: '#37C782',
+    bg: '#000'
   },
   {
     name: 'Sass',
-    color: '#F85EFB'
+    color: '#F85EFB',
+    bg: "white"
   },
   {
     name: 'Redux',
-    color: '#9F01E9'
+    color: '#9F01E9',
+    bg: 'white'
+  },
+  {
+    name: "Graphql",
+    color: "#e535ab",
+    bg: "#000000"
+  },
+  {
+    name: "GitHub",
+    color: "#171515",
+    bg: "#ffffff"
+  },
+  {
+    name: "GitLab",
+    color: "#e34329",
+    bg: "#ffffff"
   },
   {
     name: 'Bootstrap',
-    color: ''
+    color: '#f8f3fd',
+    bg: '#7b11f8'
   },
+  {
+    name: "Material UI",
+    color: "#0081cb",
+    bg: "#000000"
+  },
+  {
+    name: "TailwindCss",
+    color: "#17bcb8",
+    bg: "#f8f3fd"
+  }
 ]
 export const learn_by_myselfs = [
   {

@@ -26,7 +26,7 @@ const Header = () => {
     <section>
       <div className='sm:mb-[50px] mt-10 flex justify-between'>
         <div>
-          LOGO
+          {/* LOGO */}
         </div>
         <div className=''>
           <label className="switch">

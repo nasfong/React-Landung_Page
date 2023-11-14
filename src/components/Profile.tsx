@@ -44,17 +44,17 @@ const Profile = () => {
           </div>
         </div>
         {/* body */}
-        <div className='flex'>
-          <div className="whitespace-nowrap">Proficient: </div>
+        <div className='flex gap-x-2'>
+          <div className="whitespace-nowrap">Skill: </div>
           <div className='flex flex-wrap gap-1'>
             {proficients.map((pro, idx) => (
-              <div className={`card-item`} style={{ color: pro.color }} key={idx}>
-                {pro.name}
+              <div className={`card-item`} style={{ color: pro.color, backgroundColor: pro.bg }} key={idx}>
+                <span className="font-bold">{pro.name}</span>
               </div>
             ))}
           </div>
         </div>
-        <div className='flex'>
+        {/* <div className='flex'>
           <div className="whitespace-nowrap">Learn by myself: </div>
           <div className='flex flex-wrap gap-1'>
             {learn_by_myselfs.map((learn, idx) => (
@@ -63,16 +63,16 @@ const Profile = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         {/* footer */}
         <div className="flex flex-row gap-x-10 lg:pt-10">
           {socails.map((social, idx) => (
             <div key={idx} className="flex flex-row items-center gap-x-2">
-              <img src='/svg/facebook.svg' className='w-[20px] h-[20px] svg' />
-              {/* <div
+              {/* <img src='/svg/facebook.svg' className='w-[20px] h-[20px] svg' /> */}
+              <div
                 className='icon'
                 dangerouslySetInnerHTML={{ __html: social.icon }}
-              /> */}
+              />
               <div>{social.name}</div>
             </div>
           ))}
