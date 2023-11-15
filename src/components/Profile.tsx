@@ -2,6 +2,7 @@ import { learn_by_myselfs, proficients, socails } from "../data"
 
 const dateOne = new Date()
 const dateTwo = new Date("2023-02-13")
+const updateDate = new Date("2023-11-15")
 
 const dateOneUTC = Date.UTC(
   dateOne.getFullYear(),
@@ -14,7 +15,14 @@ const dateTwoUTC = Date.UTC(
   dateTwo.getDate()
 );
 
+const dateUpdateUTC = Date.UTC(
+  updateDate.getFullYear(),
+  updateDate.getMonth(),
+  updateDate.getDate()
+);
+
 const days = (dateOneUTC - dateTwoUTC) / (1000 * 60 * 60 * 24);
+const update = (dateOneUTC - dateUpdateUTC) / (1000 * 60 * 60 * 24);
 
 const Profile = () => {
 
@@ -41,6 +49,7 @@ const Profile = () => {
             <div>Phone number: <span className='font-bold'>093292931</span> </div>
             <div className="">Email: <span className='font-bold'>fongren007@gmail.com</span> </div>
             <div>Created date: <span className=''>13/02/2023 (<span className='text-[#50CD89] font-semibold'>{days}days ago</span>)</span> </div>
+            <div>Updated date: <span className=''>13/02/2023 (<span className='text-[#50CD89] font-semibold'>{update}days ago</span>)</span> </div>
           </div>
         </div>
         {/* body */}
