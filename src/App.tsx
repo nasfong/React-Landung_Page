@@ -27,13 +27,13 @@ function App() {
       <img src="/svg/blob.svg" alt="" className="absolute top-0 right-0 pointer-events-none" />
       <Header />
       <Profile />
-      <ImageScroll />
+      {/* <ImageScroll />
       <BasicDemo />
       <RCIMobile />
       <WebFinzcore />
-      <Figma />
-      <Github />
-      <FrontendEngineer />
+      <Figma /> */}
+      {/* <Github /> */}
+      {/* <FrontendEngineer /> */}
 
       <ScrollToTop showUnder={100} duration={2000}>
         <div
